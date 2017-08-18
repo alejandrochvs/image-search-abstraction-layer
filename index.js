@@ -68,6 +68,9 @@ db.once('open', function () {
             }
             res.send(docs);
         });
+    });
+    app.get('/',function(req,res){
+        res.render('index');
     })
     app.listen(port, function () {
         console.log('App is listening on ' + port);

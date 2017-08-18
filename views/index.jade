@@ -9,8 +9,18 @@ html(lang='en')
         link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
         link(rel='stylesheet', href='css/main.css')
     body
-        .col-xs-12
-            p.res Title
+        .col-xs-10.col-xs-offset-1.container.main
+            h1.col-xs-12 Image Search abstraction layer
+            h2.col-xs-10.col-xs-offset-1 Objective
+            p.col-xs-10.col-xs-offset-1 Objective: Build a full stack JavaScript app that allows you to search for images like this = 
+                a(href="/search/?query=cats&offset=2") "/search/?query=cats&offset=2" 
+                | and browse recent search queries like this: https://cryptic-ridge-9197.herokuapp.com/api/latest/imagesearch/. Then deploy it to Heroku.
+            h2.col-xs-10.col-xs-offset-1 User stories.
+            ul.col-xs-8.col-xs-offset-2
+                li.col-xs-12 I can get the image URLs, alt text and page urls for a set of images relating to a given search string.
+                li.col-xs-12 I can paginate through the responses by adding a ?offset=2 parameter to the URL.
+                li.col-xs-12 I can get a list of the most recently submitted search strings.
+            
     script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
     script(src='js/main.js')

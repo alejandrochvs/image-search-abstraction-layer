@@ -1,0 +1,20 @@
+{
+  "name": "image-search-abstraction-layer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "author": "alejandrochvs",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "jade": "^1.11.0",
+    "mongoose": "^4.11.7",
+    "node-bing-api": "^3.2.2",
+    "nodemon": "^1.11.0"
+  }
+}
